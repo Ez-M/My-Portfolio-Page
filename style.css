@@ -45,7 +45,6 @@ aside {
     max-width: 200px;
     background-color: palegreen;
     
-    
 }
 
 
@@ -59,35 +58,25 @@ aside {
 
 
 main {
-    background-color: cadetblue;
+    background-color: white;
     max-width: 1000px;
 }
 
-main img {
-    display: block;
+main div{
+    width: 1000px;
+    background-color: cadetblue;
+    margin: 5px;
+}
+
+#maincard1 {
+    height: 459px;
+}
+
+#maincard2 img, #maincard3 img {
     width: 500px;
 }
 
-#maincard1, #maincard3{
-    float: left;
-    clear: both;
-}
-#maincard2 {
-    float: right;
-    clear: both;
-}
-
-#maintext2 {
-    clear: left;
-    text-align: right;
-}
-
-#maintext3 {
-    clear: right;
-}
-
 footer {
-    width: 100%;
     background-color: black;
     text-align: center;
     line-height: 35px;
@@ -139,7 +128,7 @@ footer h3 {
 
     
     .asidetext {
-        max-width: 300px;
+        max-width: 250px;
         background-color: cornsilk;
         max-height: 100px;
         position: relative;
