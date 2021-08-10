@@ -1,121 +1,215 @@
+:root {
+    --blue: blueviolet;
+}
+
 * {
     font-family: monospace;
     padding: 0;
     margin: 0;
+
 }
+/*written to ensure the page filled all available browser space.
+For some reason, this was not happening without specifying html height 100*/
 html, body {
     height: 100%;
 }
-
+/* Header and nav bar are the same color, and meant to appear as one element with offcentered text*/
 header {
     width: 100%;
     background-color: black;
-    color: rgba(245, 245, 245, 0.781);
+
+}
+/*colors and extends header text to the right*/
+header h1 {
+    background-color: var(--blue);
+    width:fit-content;
+    position:relative;
+    padding-left: 4%;
 }
 
 
 nav {
     width: 100%;
-    justify-content: right;
     text-align: right;
     font-size: large;
-    background-color: red;
+    background-color: black;
 }
 
 
 nav a {
 
-    color: rgb(187, 123, 4);
+    color: var(--blue);
     font-size: 20px;
     font-family: monospace;
     font-weight: bolder;
 }
 
-
-#flexbox1 {
+/*flexbox is the section that contains both aside and main, setting this to flex allows 
+for changing the order of elements in the interface in different screen sizes*/ 
+.flexbox1 {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    background-color: coral;
+    background-color: black;
     justify-content: center;
 }
 
 
 aside {
-    max-width: 200px;
-    background-color: palegreen;
-    
+    width: 100%;
+    max-width: 1000px;
+    max-height: 304px ;
+    border-left-style:solid;
+    border-color: var(--blue);
+    margin-bottom: 5%;
+
 }
 
 
 .asidecard {
     height: 200px;
     width: 200px;
-    background-color: blueviolet;
+    background-color: black;
+    padding-left: 5%;
 
+}
+
+.asidetext {
+    color: --blue;
+    padding-left: 5%;
+    max-width: 400px;
+    max-height: 100px;
+    position: relative;
+    left: 300px;
+    bottom: 50%;
+    z-index: 1 ;
+    color: var(--blue);
 }
 
 
 
 main {
-    background-color: white;
+    width: 100%;
     max-width: 1000px;
+    background-color: black;
+    border-left-style:solid;
+    border-color: var(--blue);
 }
 
-main div{
-    width: 1000px;
-    background-color: cadetblue;
-    margin: 5px;
+h2 {
+
+    font-size: 50px;
+    color: var(--blue);
 }
 
-#maincard1 {
-    height: 459px;
+aside h2 {
+    position:relative;
+    left:-230px;
+}
+main h2 {
+    position:relative;
+    left: -200px;
+}
+
+
+
+.maincard{
+    max-width: 1000px;
+
+    padding-left: 5%;
+
+    margin-left: 5px;
+}
+
+.maincard img {
+    border-style: solid;
+    border-color:var(--blue);
+    background-color: white;
+    opacity: .5;
+}
+.maincard img:hover {
+    opacity: 1;
+
+}
+
+#maincard1{
+    padding-right: 6px;
+}
+
+#maincard1 img {
+    width: 100%;
+    padding-left: 0px;
 }
 
 #maincard2 img, #maincard3 img {
-    width: 500px;
+    max-width: 480px;
 }
 
+.cardtext  {
+    width: fit-content;
+    background-color: var(--blue);
+    position:relative;
+    bottom: 100px;
+    left: 56px;
+}
+
+#cardtext1 {
+    bottom: 38px;
+}
+.cardtext h4 {
+    font-size: larger;
+}
+
+#contact {
+    background-color: black;
+}
+#contact >* {
+    font-size: 300%;
+    margin-left: 18%;
+    color: var(--blue);
+
+}
+
+#contact h3{
+    display: inline;
+    text-align: left;
+    margin-left: 0%;
+
+
+}
 footer {
     background-color: black;
     text-align: center;
-    line-height: 35px;
+    height: 35px;
     padding: 10px;
 
 }
 
-footer h3 {
+footer h4 {
     font-weight: bolder;
-    font-size: 35px;
+    font-size: 5%;
     color:blanchedalmond;
 }
 
 
 @media screen and (max-width: 1233px) {
 
-    nav {
-        text-align: center;
+
+
+    header h1 {
+        padding-left: 0px;
     }
 
-    main {
-        width: 100%;
-    }
 
 
 
-    aside {
-        width: 100%;
-        max-width: 1000px;
-    }
 
     .asidetext {
         max-width: 400px;
-        background-color: cornsilk;
-        box-shadow: 10px, 10px, black;
         max-height: 100px;
         position: relative;
         left: 300px;
-        bottom: 50px;
+        bottom: 50%;
         z-index: 1 ;
     }
 
@@ -124,12 +218,17 @@ footer h3 {
     
 }
 
+    .cardtext  {
+        max-width: 80%;
+    }
+
+
 @media screen and (max-width: 720px) {
+
 
     
     .asidetext {
         max-width: 250px;
-        background-color: cornsilk;
         max-height: 100px;
         position: relative;
         left: 200px;
@@ -141,4 +240,12 @@ footer h3 {
         width: 198px;
     }
 
+}
+
+.cardtext  {
+    width: fit-content;
+    background-color: var(--blue);
+    position:relative;
+    bottom: 100px;
+    left: 56px;
 }

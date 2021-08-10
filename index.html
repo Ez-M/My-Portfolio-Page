@@ -11,21 +11,21 @@
 <body>
 
     <header>
-        <h1> This is my portfolio site </h1>
+        <h1> Ezequiel Martinez's Portfolio </h1>
     </header>
 
     <nav>
-        <a href="#">About</a>
-        <a href="#">My stuff</a>
-        <a href="#">I'm not sure yet</a>
+        <a href="#asidecard">About</a>
+        <a href="#maincard1">My stuff</a>
+        <a href="#contact">Contact</a>
     </nav>
 
-
-    <section ID = "flexbox1">
-
+    <section class = "flexbox1">
+<!--asidecard functions as bio, and contains headshot-->
         <aside> 
-            <div class = "asidecard">
-                <img src="./Assets/tunabed.png" alt= "fish in bed" height=200 width=200>
+            <h2>About Me</h2>
+            <div class = "asidecard" id="asidecard">
+                <img src="./Assets/Headshot.jpg" alt= "My headshot" height=200 width=200>
             </div>
 
             <div class = "asidetext">
@@ -34,40 +34,66 @@
                     Lo</p>
             </div>
         </aside>
+        <!--main contains each "maincard" which then function as individual containers to present
+        each project with a thumbnail and brief summary or description-->
 
         <main>
+            
+            <h2>My Work</h2>
+
 
             <div class="maincard" id="maincard1">
-                <img src="./Assets/stockimage1.jpg" alt= "fish in bed">              
-                <p>lorem ipsum Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum
-                Lorem ipsumLorem ipsumLorem ipsumLorem ipsum
+                <a href=https://www.google.com>
+                    <img src="./Assets/stockimage1.jpg" alt= "Placeholder image"></a>   
+            </div>
+            <div class="cardtext" id="cardtext1">
+                <h4>Placeholder Work</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 </p>
             </div>
 
 
-            <div class="maincard" id="maincard2">
-                <img src="./Assets/stockimage2.jpg" alt= "fish in bed">
-                <p>lorem ipsum Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum
-                    Lorem ipsumLorem ipsumLorem ipsumLorem ipsum
-                </p>
-            </div>
-            
+            <div id="smallwork">
+                <div class="maincard" id="maincard2">
+                    <a href=https://www.google.com>
+                    <img src="./Assets/stockimage2.jpg" alt= "Placeholder image"></a>
+                </div>
+                <div class="cardtext"id="cardtext2">
+                    <h4>Placeholder Work</h4>
+                    <p>lorem ippsumLorem ipsum
+                    </p>
+                </div>
+                
 
-            <div class="maincard" id="maincard3"> 
-                <img src="./Assets/stockimage3.jpg" alt= "fish in bed" >            
-                <p>lorem ipsum Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum
-                Lorem ipsumLorem ipsumLorem ipsumLorem ipsum
-                </p>
+                <div class="maincard" id="maincard3"> 
+                    <a href=https://www.google.com>
+                        <img src="./Assets/stockimage3.jpg" alt= "Placeholder image"></a> 
+                </div>
+                <div class="cardtext" id="cardtext3">
+                    <h4>Placeholder Work</h4>
+                    <p>lorem ipspsumLorem 
+                    </p>
+                </div>
             </div>
-
 
         </main>
+        <br>
 
     </section>
-
     <footer>
-        <h3>This is the footer</h3>
+    
     </footer>
+
+
+    <div id=contact>
+        <h3>Contact</h3>
+        <a href="https://github.com/Ez-M">Github</a>
+        <a href="https://www.google.com">E-Mail</a>
+        <a href="https://www.google.com">LinkdIn</a>
+    </div>
+
+
+
     
 </body>
 </html>
