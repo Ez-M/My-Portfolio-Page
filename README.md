@@ -3,6 +3,7 @@ This project was created for use in the future as a basic portfolio. Work pieces
 
 # installation 
 All referenced files are included in assets, with a few external links most of which are placeholders. 
+- Link to deployed page- https://ez-m.github.io/My-Portfolio-Page/
 
 # What was done, and what was learned. 
 I expereimented with a number of layout methods and styles before deciding on a simpler one based on the animation that was provided with the assignment. I've learned a lot more about laying out flexbox elements, and making functional links and front end presentation with hover elements.
