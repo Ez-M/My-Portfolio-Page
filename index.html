@@ -1,98 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel= "stylesheet" href= "style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
     <title>Document</title>
-
 </head>
+
 <body>
 
-    <header>
-        <h1> Ezequiel Martinez's Portfolio </h1>
-    </header>
+    <div class="mainContainter container-fluid">
 
-    <nav>
-        <a href="#asidecard">About</a>
-        <a href="#maincard1">My stuff</a>
-        <a href="#contact">Contact</a>
-    </nav>
-
-    <section class = "flexbox1">
-<!--asidecard functions as bio, and contains headshot-->
-        <aside> 
-            <h2>About Me</h2>
-            <div class = "asidecard" id="asidecard">
-                <img src="./Assets/Headshot.jpg" alt= "My headshot" height=200 width=200>
+        <div class="row">
+            <div class="header col-12 justify-content-start">
+                <h1>Ezequiel Martinez</h1>
+            </div>
+            <div class="navbar col-12 justify-content-end">
+                <a class="navTab" href="#asidecard">About</a>
+                <a class="navTab" href="#maincard1">My stuff</a>
+                <a class="navTab" href="#contact">Contact</a>
             </div>
 
-            <div class = "asidetext">
-                <p> Hello and thank you for visiting my portfolio page, I'm currently studying CSS,HTML, and Javascript but will be uploading projects as I complete them.</p>
-            </div>
-        </aside>
-        <!--main contains each "maincard" which then function as individual containers to present
-        each project with a thumbnail and brief summary or description-->
-
-        <main>
-            
-            <h2>My Work</h2>
+        </div>
 
 
-            <div class="maincard" id="maincard1">
-                <a href=https://kimberly-rodriguez.github.io/job-search/>
-                    <img src="./Assets/screenshot.png" alt= "Job-Search page image"></a>   
-            </div>
-            <div class="cardtext" id="cardtext1">
-                <h4>Job-Search Project</h4>
-                <p>This web app was my first venture into group development and offered a lot of practice working with 3rd party APIs and Jquery.
-                    The deployed application is available in the repository's README. 
-                </p>
+        <div class="divMain row">
+            <div class="buffer buffer-left col-2">
+                <!-- <p>test</p> -->
             </div>
 
+            <div class="main content col-8">
+                <!--asidecard functions as bio, and contains headshot-->
+                <aside>
+                    <h2>About Me</h2>
+                    <div class="asidecard" id="asidecard">
+                        <img src="./Assets/Headshot.jpg" alt="My headshot" height=200 width=200>
 
-            <div id="smallwork">
-                <div class="maincard" id="maincard2">
-                    <a href=https://ez-m.github.io/five-day-weather-app/>
-                    <img src="./Assets/Weather_Capture.jpg" alt= "Weather App image"></a>
+                        <div class="asidetext ">
+                            <p class=""> Hello and thank you for visiting my portfolio page, I'm currently studying
+                                CSS,HTML, and
+                                Javascript but will be uploading projects as I complete them.</p>
+                        </div>
+                    </div>
+
+                </aside>
+                <!--main contains each "maincard" which then function as individual containers to present
+                     each project with a thumbnail and brief summary or description-->
+
+                <div class="maincard col-12" id="maincard1">
+                    <h2>My Work</h2>
+                    <a href=https://github.com/krodriguez2022/job-search>
+                        <img src="./Assets/screenshot.png" alt="Job Search page image"></a>
+
+                    <div class="cardtext" id="cardtext1">
+                        <h4>Job Search Project</h4>
+                        <p>This web app was my first venture into group development and offered a lot of practice
+                            working
+                            with 3rd party APIs and Jquery.
+                            The deployed application is available in the repository's README.
+                        </p>
+                    </div>
+
+
                 </div>
-                <div class="cardtext"id="cardtext2">
-                    <h4>Five day weather app</h4>
-                    <p>A weather app that utilizes the openWeather API and moment.js  
-                    </p>
-                </div>
-                
 
-                <div class="maincard" id="maincard3"> 
-                    <a href=https://ez-m.github.io/day-planner>
-                        <img src="./Assets/planner_capture.jpg" alt= "Planner app image"></a> 
+
+
+                <div class="row" id="smallwork">
+
+                    <div class="maincard col-6" id="maincard2">
+                        <a href=https://github.com/Ez-M/five-day-weather-app>
+                            <img src="./Assets/Weather_Capture.jpg" alt="Weather App image"></a>
+                        <div class="cardtext" id="cardtext2">
+                            <h4>Five day weather app</h4>
+                            <p>A weather app that utilizes the openWeather API and moment.js
+                            </p>
+                        </div>
+                    </div>
+
+
+
+                    <div class="maincard col-6" id="maincard3">
+                        <a href=https://ez-m.github.io/day-planner>
+                            <img src="./Assets/planner_capture.jpg" alt="Planner app image"></a>
+                        <div class="cardtext" id="cardtext3">
+                            <h4>work day planner</h4>
+                            <p>Dynamic color coded work day planner</p>
+                        </div>
+                    </div>
+
                 </div>
-                <div class="cardtext" id="cardtext3">
-                    <h4>work day planner</h4>
-                    <p>Dynamic color coded work day planner
-                    </p>
-                </div>
+
             </div>
 
-        </main>
-        <br>
-
-    </section>
-    <footer>
-    
-    </footer>
+            <div class="buffer buffer-right col-2">
+                <!-- <p>test</p> -->
+            </div>
 
 
-    <div id=contact>
-        <h3>Contact</h3>
-        <a href="https://github.com/Ez-M">Github</a>
-        <a href="mailto: martinez.ezequiel42@gmail.com">E-Mail</a>
-        <a href="https://www.linkedin.com/in/ezequiel-martinez-6932a7215/">LinkedIn</a>
+
+        </div> <!-- end of divMain row -->
+
+
+        <div class="footer col-12">
+            <h3>Contact</h3>
+            <a href="https://github.com/Ez-M">Github</a>
+            <a href="mailto: martinez.ezequiel42@gmail.com">E-Mail</a>
+            <a href="https://www.linkedin.com/in/ezequiel-martinez-6932a7215/">LinkedIn</a>
+        </div>
     </div>
 
 
 
-    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script src="./script.js"></script>
 </body>
+
+
 </html>
+
